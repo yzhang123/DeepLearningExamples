@@ -256,7 +256,7 @@ The inference benchmarking is performed on a single GPU by ‘trt/scripts/trt_in
 
 ### TRT Inference process
 
-The inference is performed by ‘trt/scripts/trt_inference.sh’ which delegates to ‘trt/scripts/trt_inference_benchmark.sh’. The script runs on a single GPU. To do inference prediction on the entire dataset ‘NUM_FRAMES’ is set to 3600, which roughly corresponds to 36 seconds. This covers the longest sentences in both LibriSpeech dev and test dataset. By default, ‘BATCH_SET’ is set to 1 to simulate the online inference scenario in deployment. Other batch sizes can be tried by setting a different value to this parameter. By default ‘TRT_PRECISION’ is set to full precision and can be changed by setting ‘export TRT_PRECISION=fp16’. The prediction results are stored at ‘/results/trt_predictions.txt’ and ‘/results/pyt_predictions.txt’.
+The inference is performed by `trt/scripts/trt_inference.sh` which delegates to `trt/scripts/trt_inference_benchmark.sh`. The script runs on a single GPU. To do inference prediction on the entire dataset `NUM_FRAMES` is set to 3600, which roughly corresponds to 36 seconds. This covers the longest sentences in both LibriSpeech dev and test dataset. By default, `BATCH_SET` is set to 1 to simulate the online inference scenario in deployment. Other batch sizes can be tried by setting a different value to this parameter. By default `TRT_PRECISION` is set to full precision and can be changed by setting `export TRT_PRECISION=fp16`. The prediction results are stored at `/results/trt_predictions.txt` and `/results/pyt_predictions.txt`.
 
 
 
